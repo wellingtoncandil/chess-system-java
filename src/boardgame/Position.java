@@ -15,4 +15,14 @@ public class Position {
 	public String toString() {
 		return row+", "+column;
 	}
+
+	public int getRow() {
+		return row;
+	}
+
+	public int getColumn() {
+		return column;
+	}
+
+	
 }
