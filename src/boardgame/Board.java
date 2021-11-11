@@ -23,14 +23,14 @@ public class Board {
 		return columns;
 	}
 	
-	public Piece piece(int row, int column) {
+	public Piece piece(int row, int column) { //retorna a peça do tabuleiro informando a linha e a coluna
 		if(!positionExists(row, column)) {
 			throw new BoardException("Position not on the board");
 		}
 		return pieces[row][column];
 	}
 	
-	public Piece piece (Position position) {
+	public Piece piece (Position position) {// retorna a peça do tabuleiro informando a posição da peça.
 		if(!positionExists(position)) {
 			throw new BoardException("Position not on the board");
 		}
@@ -64,14 +64,14 @@ public class Board {
 	}
 	
 	// testa se a posição existe informando a posição
-	public boolean positionExists(Position pos) {
-		return positionExists(pos.getRow(), pos.getColumn());
+	public boolean positionExists(Position position) {
+		return positionExists(position.getRow(), position.getColumn());
 	}
 	
-	public boolean thereIsAPiece(Position pos) {
+	public boolean thereIsAPiece(Position pos) { //retorna um booleano true caso exista uma peça na posição informada.
 		if(!positionExists(pos)) {
 			throw new BoardException("Position not on the board");
 		}
-		return piece(pos) != null;//
+		return piece(pos) != null;
 	}
 }

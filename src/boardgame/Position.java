@@ -1,6 +1,7 @@
 package boardgame;
 
-public class Position {
+public class Position { //classe responsavel por instanciar e informar
+	//posição da peça no tabuleiro. Somente será acessada pela classe Piece
 
 	private int row;
 	private int column;

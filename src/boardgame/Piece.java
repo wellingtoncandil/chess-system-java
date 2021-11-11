@@ -2,7 +2,7 @@ package boardgame;
 
 public class Piece {
 
-	protected Position position; //protected pois apenas as classes da camada de tabuleiro poderão ver a posição da peça
+	protected Position position; //protected pois apenas as classes da camada de tabuleiro (boardgame) poderão ver a posição da peça
 	public Board board;
 	
 	public Piece(Board board) {// inicia a peça informando um tabuleiro
